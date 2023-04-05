@@ -1,11 +1,11 @@
 .headerDark,
 .headerLight {
-    height: 20rem;
+    height: 40rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
   align-items: start;
-    padding: 3rem;
+    padding: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
 }
