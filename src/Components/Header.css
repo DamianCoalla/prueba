@@ -1,6 +1,6 @@
 .headerDark,
 .headerLight {
-    height: 20rem;
+    height: 40rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
