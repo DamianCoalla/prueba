@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.listDark, .listLight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    margin-top: -4rem;
+    height: 20rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar {
+    background-color: #a495dd;
+    border-radius: 10px;
+    width: 7px;
+  }
+
+li {
+    list-style: none;
+    font-size: 18px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listLight {
+    background-color: aliceblue;
+    color: hsl(235, 19%, 35%);
+}
+
+.listDark {
+    background-color: hsl(237, 14%, 26%);
+    color: aliceblue;
+}
+
+.lined {
+text-decoration: line-through;
+}
+
+.checkbox-round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;   
+    
+}
+.gradient {
+    background-image: linear-gradient(to bottom right, skyblue, rgb(83, 19, 112));
+    border-radius: 50%;
+ 
+  }
+
+.checkbox-round:checked {
+    background-image: url(../assets/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+label {
+    margin-left: 1rem;
+}
+
+.crossButton {
+    background: none;
+    border: none;
+  }
+  .cross {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;
+  }
+  
+  .crossButton {
+    background: none;
+    border: none;
+  }
+ 
+
+@media (max-width: 376px){
+    .listDark, .listLight {
+        margin-top: -6rem;
+        height: 20rem;
+        width: 15rem;    
+}
+li {
+    font-size: 10px;
+}
+
+.checkbox-round {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.img {
+    max-width: 8px;
+}
+}

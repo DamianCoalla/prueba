@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.AppDark {
+height: 100vh;
+width: 100vw;
+background-color: hsl(235, 21%, 11%);
+}
+
+.AppDark footer {
+    color: hsl(236, 33%, 92%);
+}
+.AppLight {
+    height: 100vh;
+width: 100vw;
+background-color: hsl(233, 11%, 84%);
+}
+
+.AppLight footer {
+    color:hsl(236, 9%, 61%) ;
+}
+footer {
+    text-align: center;
+ position: absolute;
+ bottom: 1rem;
+ width: 100%;
+}
+
+@media (max-width: 376px){
+    footer {
+        text-align: center;
+     position: absolute;
+     bottom: 1rem;
+     width: 100%;
+     font-size: 10px;
+    }
+}
